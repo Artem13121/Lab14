@@ -65,30 +65,30 @@ int main() {
     printf("n: ");
     scanf("%d", &n);
     full_elements(a, n);
-    printf("Исходный массив: ");
+    printf("Г€Г±ГµГ®Г¤Г­Г»Г© Г¬Г Г±Г±ГЁГў: ");
     put_elements(a, n);
     int b, e;
-    printf("от до: ");
+    printf("Г®ГІ Г¤Г®: ");
     scanf("%d %d", &b, &e);
-    printf("Сумма: %.2f\n", sum_elements(a, b, e));
+    printf("Г‘ГіГ¬Г¬Г : %.2f\n", sum_elements(a, b, e));
     double v;
-    printf("Найти: ");
+    printf("ГЌГ Г©ГІГЁ: ");
     scanf("%lf", &v);
-    printf("Позиция: %d\n", find_element(a, n, v));
+    printf("ГЏГ®Г§ГЁГ¶ГЁГї: %d\n", find_element(a, n, v));
     calc_elements(a, n);
-    printf("Массив после добавления последнего элемента: ");
+    printf("ГЊГ Г±Г±ГЁГў ГЇГ®Г±Г«ГҐ Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГї ГЇГ®Г±Г«ГҐГ¤Г­ГҐГЈГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ : ");
     put_elements(a, n);
     double A;
-    printf("Введите значение A: ");
+    printf("Г‚ГўГҐГ¤ГЁГІГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ A: ");
     scanf("%lf", &A);
     int index = find_min_positive_greater_than_A(a, n, A);
 
     if (index != -1) {
-        printf("Индекс минимального положительного элемента > %.2f: %d\n", A, index);
-        printf("Значение этого элемента: %.2f\n", a[index]);
+        printf("Г€Г­Г¤ГҐГЄГ± Г¬ГЁГ­ГЁГ¬Г Г«ГјГ­Г®ГЈГ® ГЇГ®Г«Г®Г¦ГЁГІГҐГ«ГјГ­Г®ГЈГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ  > %.2f: %d\n", A, index);
+        printf("Г‡Г­Г Г·ГҐГ­ГЁГҐ ГЅГІГ®ГЈГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ : %.2f\n", a[index]);
     }
     else {
-        printf("Не найден положительный элемент больше %.2f\n", A);
+        printf("ГЌГҐ Г­Г Г©Г¤ГҐГ­ ГЇГ®Г«Г®Г¦ГЁГІГҐГ«ГјГ­Г»Г© ГЅГ«ГҐГ¬ГҐГ­ГІ ГЎГ®Г«ГјГёГҐ %.2f\n", A);
     }
 
     return 0;
